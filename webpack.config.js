@@ -1,4 +1,6 @@
 var webpack = require("webpack");
+var WebpackCleanupPlugin = require("webpack-cleanup-plugin");
+
 var core = [
     "core-js/features/array/find",
     "core-js/features/array/find-index",
@@ -64,5 +66,6 @@ module.exports = {
         //new webpack.optimize.UglifyJsPlugin(),
         //new webpack.optimize.OccurenceOrderPlugin(),
         //new webpack.optimize.DedupePlugin()
+        new WebpackCleanupPlugin()
       ]
 };

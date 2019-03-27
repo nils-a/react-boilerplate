@@ -4,12 +4,16 @@ import * as config from "./webpack.config";
 const opn = require('open');
 
 const output = (config as webpack.Configuration).output as webpack.Output; // why?!
+const plugins = (config as webpack.Configuration).plugins;
+plugins.push(new webpack.HotModuleReplacementPlugin());
 let serverConfig = {...config,
   mode: "development",
   output:{
     ...output,
-    pathinfo:true
-}} as webpack.Configuration;
+    pathinfo:true,
+  },
+  plugins: plugins
+} as webpack.Configuration;
 
 const compiler = webpack(serverConfig);
 
