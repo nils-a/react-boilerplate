@@ -1,0 +1,50 @@
+{
+  "name": "app-app",
+  "version": "0.0.1",
+  "description": "client-components of APP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "webpack --mode production",
+    "build": "webpack --mode development",
+    "watch": "npm run build -- --watch",
+    "start": "ts-node localServer.ts"
+  },
+  "author": "Nils Andresen",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-loader": "^7.1.4",
+    "core-js": "^2.5.3",
+    "file-loader": "^1.1.11",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "rxjs": "^5.5.7",
+    "url-loader": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/prop-types": "^15.5.2",
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-router": "^4.0.23",
+    "@types/react-router-dom": "^4.2.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^6.0.7",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.3",
+    "ts-loader": "^4.1.0",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  }
+}

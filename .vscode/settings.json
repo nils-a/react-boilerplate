@@ -1,0 +1,9 @@
+{
+    "editor.tabsize": 2,
+    "files.exclude": {
+        "dist": true,
+        "node_modules": true,
+        ".vscode": true
+    },
+    "easysass.compileAfterSave": false
+}

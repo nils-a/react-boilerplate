@@ -1,0 +1,19 @@
+nav a + a {
+    margin-left: 1em;
+    &::before{
+        content: '|';
+        margin-right: 1em;
+    }
+}
+
+nav + div {
+    margin-top: 2em;
+}
+
+#app-app {
+    line-height: 1.4;
+}
+
+.clickable {
+    cursor: pointer;
+}
