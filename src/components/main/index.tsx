@@ -35,6 +35,7 @@ export class Main extends React.Component<MainProps, MainState> {
                 todos: x
             });
         }));
+        this.props.todoService.Load();
     }
     
     componentWillUnmount() {

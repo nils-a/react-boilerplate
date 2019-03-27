@@ -25,7 +25,7 @@ export const App = (props: AppProps) => (
                 <Switch>
                     <Redirect from="/" exact={true} to={Routes.Main} />
                     <Route path={Routes.Main}>
-                        <h1>Hallo, Welt</h1>
+                        <Main todoService={props.todoService} />
                     </Route>
                 </Switch>
             </div>
