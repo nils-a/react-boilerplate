@@ -1,15 +1,15 @@
 import * as webpack from "webpack";
 import * as WebpackDevServer from "webpack-dev-server";
 import * as config from "./webpack.config";
-import * as opn from "opn";
+const opn = require('open');
 
-//const output = config.output as webpack.Output;
+const output = (config as webpack.Configuration).output as webpack.Output; // why?!
 let serverConfig = {...config,
   mode: "development",
   output:{
-    ...config.output,
+    ...output,
     pathinfo:true
-}};
+}} as webpack.Configuration;
 
 const compiler = webpack(serverConfig);
 
@@ -21,7 +21,7 @@ const server = new WebpackDevServer(compiler, {
   contentBase: "./",
   hot: true,
   historyApiFallback: true,
-  progress: true,
+  //progress: true,
   stats: {
     colors: true,
     hash: false,

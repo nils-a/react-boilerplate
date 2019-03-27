@@ -1,10 +1,10 @@
 var webpack = require("webpack");
 var core = [
-    "core-js/fn/array/find",
-    "core-js/fn/array/find-index",
-    "core-js/fn/map",
-    "core-js/fn/promise",
-    "core-js/fn/set"
+    "core-js/features/array/find",
+    "core-js/features/array/find-index",
+    "core-js/features/map",
+    "core-js/features/promise",
+    "core-js/features/set"
 ]
 module.exports = {
     entry: {

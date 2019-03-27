@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Subject } from 'rxjs/Rx';
+import { Subject } from 'rxjs';
 
 import { ITodoService, ITodo } from "../interfaces";
 

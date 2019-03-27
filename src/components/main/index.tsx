@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Subscription } from 'rxjs/Rx';
+import { Subscription } from 'rxjs';
 import { ITodoService, ITodo } from "../../services/interfaces";
 
 import { TodoRow } from "./todoRow";
