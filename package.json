@@ -34,7 +34,7 @@
     "@types/webpack": "^4.4.26",
     "@types/webpack-dev-server": "^3.1.4",
     "babel-loader": "^8.0.5",
-    "css-loader": "^3.6.0",
+    "css-loader": "^4.2.0",
     "file-loader": "^6.0.0",
     "node-sass": "^4.11.0",
     "open": "^7.0.4",
